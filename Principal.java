@@ -1,5 +1,3 @@
-import java.io.DataInput;
-
 public class Principal {
     public static void main(String[] args) {
 
