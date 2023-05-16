@@ -42,12 +42,12 @@ public class Principal {
                     String nomeProduto = Teclado.leString("Digite o nome do produto:");
                     double precoProduto = Teclado.leDouble("Digite o preço do produto:");
 
-                    int diaVencimentoProduto = Teclado.leInt("Digite o dia de validade do produto (dia): ");
-                    int mesVencimentoProduto = Teclado.leInt("Digite o mês de validade do produto (mês): ");
-                    int anoVencimentoProduto = Teclado.leInt("Digite o ano de validade do produto (ano): ");
+                    int diaValidadeProduto = Teclado.leInt("Digite o dia de validade do produto (dia): ");
+                    int mesValidadeProduto = Teclado.leInt("Digite o mês de validade do produto (mês): ");
+                    int anoValidadeProduto = Teclado.leInt("Digite o ano de validade do produto (ano): ");
 
-                    Data dataValidadeProduto = new Data(diaVencimentoProduto, mesVencimentoProduto,
-                            anoVencimentoProduto);
+                    Data dataValidadeProduto = new Data(diaValidadeProduto, mesValidadeProduto,
+                            anoValidadeProduto);
 
                     produto = new Produto(nomeProduto, precoProduto, dataValidadeProduto);
                     System.out.println("Produto criado com sucesso!");
@@ -56,27 +56,25 @@ public class Principal {
                 case 3:
                     System.out.println("Saindo...");
                     break;
-                
+
                 default:
                     System.out.println("Opção inválida!");
                     break;
             }
-        } while (opcao != 3);          
-        
-        /*if (opcao == 1 || opcao == 2) {
-            boolean produtoVencido = produto.estaVencido();
+        } while (opcao != 3);
 
-            if (produtoVencido) {
-                System.out.println("PRODUTO VENCIDO");
-            } else {
-                System.out.println("PRODUTO NÃO VENCIDO");
-            }
+        Data dataConsulta = new Data(20, 10, 2023);
+        if (produto.estaVencido(dataConsulta)) {
+            System.out.println("PRODUTO VENCIDO");
+        } else {
+            System.out.println("PRODUTO NÃO VENCIDO");
+        }
 
-            System.out.println("Informações da loja:");
-            System.out.println("Nome: " + loja.getNome());
-            System.out.println("Quantidade de produtos: " + loja.getQuantidadeProdutos());
-            System.out.println("Valor total: " + loja.getValorTotal());
-        }*/
+        System.out.println("Informações da loja:");
+        System.out.println("Nome: " + produto.getNome());
+        System.out.println("Quantidade de funcionarios: " + produto.getPreco());
+        // System.out.println("Valor total: " + loja.getValorTotal());
+
 
     }
 }

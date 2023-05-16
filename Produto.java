@@ -11,7 +11,7 @@ public class  Produto{
         this.dataValidade = dataValidade;
     }
 
-    //métodos de acesso da classe Produto (Get)
+    //métodos de acesso (Get e Set)
     public String getNome(){
         return nome;
     }
@@ -36,7 +36,7 @@ public class  Produto{
         this.dataValidade = dataValidade;
     }
 
-    /*public boolean estaVencido(Data dataAtual) {
+    public boolean estaVencido(Data dataAtual) {
         if (this.dataValidade == null) {
             return false;
         }
@@ -54,15 +54,11 @@ public class  Produto{
         }
 
         return false;
-    }*/
-
-    public boolean estaVencido(Data dataAtual) {
-        return dataAtual.compareTo(dataValidade) > 0;
     }
     
     @Override
     public String toString(){
-        return String.format("Nome: %s\nPreço: %s\n", nome, preco);
+        return nome +" - "+ preco +" - "+ dataValidade;
     }
 
 }

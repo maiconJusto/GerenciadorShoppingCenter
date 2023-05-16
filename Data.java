@@ -58,7 +58,7 @@ public class Data {
     //método toString
     @Override
     public String toString() {
-        return String.format("%02d/%02d/%04d", dia, mes, ano);
+        return dia + " - "+ mes +" - "+ ano;
     }
 
     //método verificação ano bissexto
@@ -100,7 +100,5 @@ public class Data {
     }
 
 
-    public int compareTo(Data dataValidade) {
-        return 0;
-    }
+   
 }
