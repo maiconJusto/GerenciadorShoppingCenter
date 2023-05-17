@@ -7,8 +7,7 @@ public class Loja {
     private Data dataFundacao;
 
     // construtor com todos os parametros
-    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco,
-            Data dataFundacao) {
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = salarioBaseFuncionario;
@@ -16,21 +15,12 @@ public class Loja {
         this.dataFundacao = dataFundacao;
     }
 
-    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco,
-            Data dataFundacaoLoja) {
+    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
-        this.endereco = endereco;
-        this.dataFundacao = dataFundacaoLoja;
-    }
-
-    // Construtor com dois parametros sendo 3º atribuido -1
-    public Loja(String nome, int quantidadeFuncionarios) {
-        this.nome = nome;
-        this.quantidadeFuncionarios = 0;
         this.salarioBaseFuncionario = -1;
-        this.endereco = null;
-        this.dataFundacao = null;
+        this.endereco = endereco;
+        this.dataFundacao = dataFundacao;
     }
 
     // métodos de acesso da classe Loja (get e set)
@@ -67,7 +57,7 @@ public class Loja {
         this.endereco = endereco;
     }
 
-    // Metodos de associação entre claase Loja/Data (Data de fundação da loja)
+    // Metodos de associação entre classe Loja/Data (Data de fundação da loja)
     public Data getDataFundacao() {
         return dataFundacao;
     }
@@ -102,6 +92,6 @@ public class Loja {
         return String.format("loja: %s\n Quantidade de funcionarios: %s\n Salario base dos funcionarios: %s\n",
                 nome,
                 quantidadeFuncionarios,
-                salarioBaseFuncionario);
+                getSalarioBaseFuncionario());
     }
 }

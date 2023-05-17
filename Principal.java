@@ -17,6 +17,11 @@ public class Principal {
                 case 1:
                     String nomeLoja = Teclado.leString("Digite o nome da loja:");
                     int quantFuncionarioLoja = Teclado.leInt("Digite quant funcionario: :");
+                    double SalFuncionarioLoja = Teclado.leDouble("Digite o Salario dos funcionarios da loja: ");
+                    
+                    int diaFundacaoLoja = Teclado.leInt("Digite o dia de fundação da loja: ");
+                    int mesFundacaoLoja = Teclado.leInt("Digite o mês de fundação da loja: ");
+                    int anoFundacaoLoja = Teclado.leInt("Digite o ano de fundação da loja: ");
 
                     String nomeRuaLoja = Teclado.leString("Digite a Rua da loja: ");
                     String numeroLoja = Teclado.leString("Digite o nº da loja: ");
@@ -26,15 +31,10 @@ public class Principal {
                     String estadoDaLoja = Teclado.leString("Digite o estado da loja: ");
                     String paisLoja = Teclado.leString("Digite o país da loja: ");
 
-                    int diaFundacaoLoja = Teclado.leInt("Digite o dia de fundação da loja: ");
-                    int mesFundacaoLoja = Teclado.leInt("Digite o mês de fundação da loja: ");
-                    int anoFundacaoLoja = Teclado.leInt("Digite o ano de fundação da loja: ");
-
-                    Endereco enderecoLoja = new Endereco(nomeRuaLoja, numeroLoja, cepLoja, complementoLoja, cidadeLoja,
-                            estadoDaLoja, paisLoja);
+                    Endereco enderecoLoja = new Endereco(nomeRuaLoja, numeroLoja, cepLoja, complementoLoja, cidadeLoja, estadoDaLoja, paisLoja);
                     Data dataFundacaoLoja = new Data(diaFundacaoLoja, mesFundacaoLoja, anoFundacaoLoja);
 
-                    loja = new Loja(nomeLoja, quantFuncionarioLoja, enderecoLoja, dataFundacaoLoja);
+                    loja = new Loja(nomeLoja, quantFuncionarioLoja, SalFuncionarioLoja, enderecoLoja, dataFundacaoLoja);
                     System.out.println("Loja criada com sucesso!");
                     break;
 
@@ -46,8 +46,7 @@ public class Principal {
                     int mesValidadeProduto = Teclado.leInt("Digite o mês de validade do produto (mês): ");
                     int anoValidadeProduto = Teclado.leInt("Digite o ano de validade do produto (ano): ");
 
-                    Data dataValidadeProduto = new Data(diaValidadeProduto, mesValidadeProduto,
-                            anoValidadeProduto);
+                    Data dataValidadeProduto = new Data(diaValidadeProduto, mesValidadeProduto, anoValidadeProduto);
 
                     produto = new Produto(nomeProduto, precoProduto, dataValidadeProduto);
                     System.out.println("Produto criado com sucesso!");
