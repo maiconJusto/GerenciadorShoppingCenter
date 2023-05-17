@@ -18,7 +18,6 @@ comment2.params=nome\ quantidadeFuncionarios\ endereco\ dataFundacao
 comment2.target=Loja(java.lang.String,\ int,\ Endereco,\ Data)
 comment3.params=
 comment3.target=java.lang.String\ getNome()
-comment3.text=public\ Loja(String\ nome,\ int\ quantidadeFuncionarios)\ {\r\n\ \ \ \ \ \ \ \ this.nome\ \=\ nome;\r\n\ \ \ \ \ \ \ \ this.quantidadeFuncionarios\ \=\ 0;\r\n\ \ \ \ \ \ \ \ this.salarioBaseFuncionario\ \=\ -1;\r\n\ \ \ \ \ \ \ \ this.endereco\ \=\ null;\r\n\ \ \ \ \ \ \ \ this.dataFundacao\ \=\ null;\r\n}
 comment4.params=nome
 comment4.target=void\ setNome(java.lang.String)
 comment5.params=

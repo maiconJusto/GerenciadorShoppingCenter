@@ -89,9 +89,6 @@ public class Loja {
 
     @Override
     public String toString() {
-        return String.format("loja: %s\n Quantidade de funcionarios: %s\n Salario base dos funcionarios: %s\n",
-                nome,
-                quantidadeFuncionarios,
-                getSalarioBaseFuncionario());
+        return nome +"/"+ quantidadeFuncionarios +"/"+ salarioBaseFuncionario +"/"+ endereco +"/"+ dataFundacao;
     }
 }

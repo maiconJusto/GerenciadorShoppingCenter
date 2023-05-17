@@ -78,8 +78,6 @@ public class Endereco{
     }
 
     public String toString(){
-        return String.format("Nome da rua: %s\nNumero: %s\nCep: %s\n" +
-            "Complemento: %s\nCidade: %s\nEstado: %s\nPais: %s\n",nomeDaRua,
-            numero, cep, complemento, cidade, estado, pais);
+        return nomeDaRua +"/"+ numero +"/"+ cep +"/"+ complemento +"/"+ cidade +"/"+ estado +"/"+ pais;
     }
 }
