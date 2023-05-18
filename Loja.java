@@ -90,6 +90,7 @@ public class Loja {
 
     @Override
     public String toString() {
-        return nome + "/" + quantidadeFuncionarios + "/" + salarioBaseFuncionario + "/" + endereco + "/" + dataFundacao;
+        return nome + "/" + quantidadeFuncionarios + "/" + salarioBaseFuncionario + "/" + endereco + "/"
+                + dataFundacao;
     }
 }

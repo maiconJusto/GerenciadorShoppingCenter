@@ -10,16 +10,17 @@ public class Cosmetico extends Loja {
         this.taxaComercializacao = taxaComercializacao;
     }
 
-    public double getTaxaComercializacao(){
+    public double getTaxaComercializacao() {
         return taxaComercializacao;
     }
 
-    public void setTaxaComercializacao(double taxaComercializacao){
+    public void setTaxaComercializacao(double taxaComercializacao) {
         this.taxaComercializacao = taxaComercializacao;
     }
 
     @Override
     public String toString() {
-        return getNome() + "/" + getQuantidadeFuncionarios() + "/" + getSalarioBaseFuncionario() + "/" + getEndereco() + "/" + getDataFundacao() +"/"+ taxaComercializacao;
+        return getNome() + "/" + getQuantidadeFuncionarios() + "/" + getSalarioBaseFuncionario() + "/"
+                + getEndereco() + "/" + getDataFundacao() + "/" + taxaComercializacao;
     }
 }

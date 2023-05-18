@@ -20,7 +20,7 @@ public class Vestuario extends Loja {
 
     @Override
     public String toString() {
-        return getNome() + "/" + getQuantidadeFuncionarios() + "/" + getSalarioBaseFuncionario() + "/" + getEndereco()
-                + "/" + getDataFundacao() + "/" + produtosImportados;
+        return getNome() + "/" + getQuantidadeFuncionarios() + "/" + getSalarioBaseFuncionario() + "/" 
+                + getEndereco() + "/" + getDataFundacao() + "/" + produtosImportados;
     }
 }

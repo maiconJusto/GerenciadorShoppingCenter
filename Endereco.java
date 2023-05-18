@@ -78,6 +78,7 @@ public class Endereco {
     }
 
     public String toString() {
-        return nomeDaRua + "/" + numero + "/" + cep + "/" + complemento + "/" + cidade + "/" + estado + "/" + pais;
+        return nomeDaRua + "/" + numero + "/" + cep + "/" + complemento + "/" + cidade + "/" + estado
+                + "/" + pais;
     }
 }
