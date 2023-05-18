@@ -7,7 +7,8 @@ public class Loja {
     private Data dataFundacao;
 
     // construtor com todos os parametros
-    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao) {
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco,
+            Data dataFundacao) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = salarioBaseFuncionario;
@@ -89,6 +90,6 @@ public class Loja {
 
     @Override
     public String toString() {
-        return nome +"/"+ quantidadeFuncionarios +"/"+ salarioBaseFuncionario +"/"+ endereco +"/"+ dataFundacao;
+        return nome + "/" + quantidadeFuncionarios + "/" + salarioBaseFuncionario + "/" + endereco + "/" + dataFundacao;
     }
 }
