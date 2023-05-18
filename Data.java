@@ -1,4 +1,5 @@
 public class Data {
+    public static String getDtaFundacao;
     private int dia;
     private int mes;
     private int ano;
