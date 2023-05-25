@@ -72,7 +72,7 @@ public class Principal {
         System.out.println("Informações da loja:");
         System.out.println("Nome: " + produto.getNome());
         System.out.println("Quantidade de funcionarios: " + produto.getPreco());
-        // System.out.println("Valor total: " + loja.getValorTotal());
+        //System.out.println("Valor total: " + produto.getValorTotal());
 
 
     }
