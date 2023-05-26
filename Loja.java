@@ -5,23 +5,26 @@ public class Loja {
     private double salarioBaseFuncionario;
     private Endereco endereco;
     private Data dataFundacao;
+    private Produto[] estoqueProdutos;
 
     // construtor com todos os parametros
-    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco,
-            Data dataFundacao) {
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao,  int tamanhoEstoque) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = salarioBaseFuncionario;
         this.endereco = endereco;
         this.dataFundacao = dataFundacao;
+        estoqueProdutos = new Produto[tamanhoEstoque];
     }
 
-    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao) {
+    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao, 
+            int tamanhoEstoque) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = -1;
         this.endereco = endereco;
         this.dataFundacao = dataFundacao;
+        estoqueProdutos = new Produto[tamanhoEstoque];
     }
 
     // métodos de acesso da classe Loja (get e set)
@@ -67,6 +70,14 @@ public class Loja {
         this.dataFundacao = dataFundacao;
     }
 
+    public Produto[] getEstoqueProdutos() {
+        return estoqueProdutos;
+    }
+
+    public void setEstoqueProdutos(Produto[] estoqueProdutos) {
+        this.estoqueProdutos = estoqueProdutos;
+    }
+
     // gasto salario funcionarios da loja
     public double gastosComSalario() {
         if (salarioBaseFuncionario == -1) {
@@ -91,6 +102,6 @@ public class Loja {
     @Override
     public String toString() {
         return nome + "/" + quantidadeFuncionarios + "/" + salarioBaseFuncionario + "/" + endereco + "/"
-                + dataFundacao;
+                + dataFundacao + "/" + estoqueProdutos;
     }
 }

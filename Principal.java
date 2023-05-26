@@ -31,10 +31,12 @@ public class Principal {
                     String estadoDaLoja = Teclado.leString("Digite o estado da loja: ");
                     String paisLoja = Teclado.leString("Digite o país da loja: ");
 
+                    int tamanhoEstoqueLoja = Teclado.leInt("Digite o tamanho do estoque: ");
+                    
                     Endereco enderecoLoja = new Endereco(nomeRuaLoja, numeroLoja, cepLoja, complementoLoja, cidadeLoja, estadoDaLoja, paisLoja);
                     Data dataFundacaoLoja = new Data(diaFundacaoLoja, mesFundacaoLoja, anoFundacaoLoja);
 
-                    loja = new Loja(nomeLoja, quantFuncionarioLoja, SalFuncionarioLoja, enderecoLoja, dataFundacaoLoja);
+                    loja = new Loja(nomeLoja, quantFuncionarioLoja, SalFuncionarioLoja, enderecoLoja, dataFundacaoLoja, tamanhoEstoqueLoja);
                     System.out.println("Loja criada com sucesso!");
                     break;
 
@@ -69,11 +71,12 @@ public class Principal {
             System.out.println("PRODUTO NÃO VENCIDO");
         }
 
+        /*
         System.out.println("Informações da loja:");
         System.out.println("Nome: " + produto.getNome());
         System.out.println("Quantidade de funcionarios: " + produto.getPreco());
-        //System.out.println("Valor total: " + produto.getValorTotal());
-
+        System.out.println("Valor total: " + produto.getValorTotal());
+        */
 
     }
 }
