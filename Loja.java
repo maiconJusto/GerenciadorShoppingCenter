@@ -7,7 +7,7 @@ public class Loja {
     private Data dataFundacao;
     private Produto[] estoqueProdutos;
 
-    // construtor com todos os parametros
+    // Primeiro construtor
     public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao,  int tamanhoEstoque) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
@@ -16,7 +16,7 @@ public class Loja {
         this.dataFundacao = dataFundacao;
         estoqueProdutos = new Produto[tamanhoEstoque];
     }
-
+    //Segundo construtor
     public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao, 
             int tamanhoEstoque) {
         this.nome = nome;
@@ -27,7 +27,7 @@ public class Loja {
         estoqueProdutos = new Produto[tamanhoEstoque];
     }
 
-    // métodos de acesso da classe Loja (get e set)
+    // métodos Get e Set
     public String getNome() {
         return nome;
     }
@@ -52,7 +52,7 @@ public class Loja {
         this.salarioBaseFuncionario = salarioBaseFuncionario;
     }
 
-    // Metodos de associação entre classe Loja/Endereço (Endereço da loja)
+    // Metodo Endereço da loja
     public Endereco getEndereco() {
         return endereco;
     }
@@ -61,7 +61,7 @@ public class Loja {
         this.endereco = endereco;
     }
 
-    // Metodos de associação entre classe Loja/Data (Data de fundação da loja)
+    // Metodos Data de fundação da loja
     public Data getDataFundacao() {
         return dataFundacao;
     }
@@ -70,6 +70,7 @@ public class Loja {
         this.dataFundacao = dataFundacao;
     }
 
+    //Método estoque da loja
     public Produto[] getEstoqueProdutos() {
         return estoqueProdutos;
     }
@@ -78,7 +79,7 @@ public class Loja {
         this.estoqueProdutos = estoqueProdutos;
     }
 
-    // gasto salario funcionarios da loja
+    // Método gastos com salario da loja
     public double gastosComSalario() {
         if (salarioBaseFuncionario == -1) {
             return -1;
@@ -88,7 +89,7 @@ public class Loja {
 
     }
 
-    // Porte(Tamanho) da loja
+    // Método tamanho da loja
     public char tamanhoDaLoja() {
         if (quantidadeFuncionarios < 10) {
             return 'P';
@@ -103,5 +104,19 @@ public class Loja {
     public String toString() {
         return nome + "/" + quantidadeFuncionarios + "/" + salarioBaseFuncionario + "/" + endereco + "/"
                 + dataFundacao + "/" + estoqueProdutos;
+    }
+
+    public void imprimeProdutos(){
+            if (estoqueProdutos != null)            
+                System.out.println(getEstoqueProdutos());
+            else
+                System.out.println("No momento não a produtos no estoque");
+    }
+    
+    public void insereProduto(){
+        if(estoqueProdutos != null)
+            for(i = 0: estoqueProdutos < tamanhoEstoque: 1++)
+                
+
     }
 }

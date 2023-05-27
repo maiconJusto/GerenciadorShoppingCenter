@@ -1,5 +1,5 @@
 public class Data {
-    public static String getDtaFundacao;
+    
     private int dia;
     private int mes;
     private int ano;
@@ -19,7 +19,7 @@ public class Data {
     }
 
     
-    //métodos de acesso (get e set)
+    //métodos Get e Set)
     public int getDia() {
         return dia;
     }

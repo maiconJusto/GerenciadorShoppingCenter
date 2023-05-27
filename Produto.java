@@ -4,7 +4,7 @@ public class  Produto{
     private double preco;
     private Data dataValidade;
 
-    //construtor c/parâmetros
+    //Construtor com parâmetros
     public Produto(String nome, double preco, Data dataValidade){
         this.nome = nome;
         this.preco = preco;
