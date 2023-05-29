@@ -1,4 +1,4 @@
-/*public class ValidadorEtapa4 {
+public class ValidadorEtapa4 {
 
 	public static void main(String[] args){
 		System.out.println("[Laboratório I]\n Desafio: Validador - Etapa 04\n");
@@ -342,4 +342,3 @@
 
 	}
 }
-*/

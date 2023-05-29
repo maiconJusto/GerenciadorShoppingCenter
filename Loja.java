@@ -113,10 +113,27 @@ public class Loja {
                 System.out.println("No momento não a produtos no estoque");
     }
     
-    public void insereProduto(){
-        if(estoqueProdutos != null)
-            for(i = 0: estoqueProdutos < tamanhoEstoque: 1++)
-                
+    public boolean insereProduto(Produto novoProduto){
+        if(estoqueProdutos != null){
+            for(int i = 0; i < estoqueProdutos.length; i++){
+                if(estoqueProdutos[i] == null){
+                    estoqueProdutos[i] = novoProduto;
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
+    public boolean removeProduto(String nomeProduto){
+        if(estoqueProdutos != null){
+            for(int i = 0; i < estoqueProdutos.length; i++){
+                if(estoqueProdutos[i] != null && estoqueProdutos[i].getNome().equals(nomeProduto)){
+                    estoqueProdutos = null;
+                    return true; // Produto removido com sucesso
+                }
+            }
+        }
+        return false; // Produto não encontrado no estoque
     }
 }
