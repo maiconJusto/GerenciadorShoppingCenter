@@ -19,11 +19,11 @@ public class Shopping {
         this.nome = nome;
     }
 
-    public Endereco getEndereco() {
+    public Endereco getEndereco(){
         return endereco;
     }
 
-    public void setEndereco(Endereco endereco) {
+    public void setEndereco(Endereco endereco){
         this.endereco = endereco;
     }
 
@@ -69,9 +69,15 @@ public class Shopping {
 
         if (tipoLoja.equals("Cosmetico") || tipoLoja.equals("Bijuteria") || tipoLoja.equals("Alimentacao")
                 || tipoLoja.equals("Informatica")) {
-            for (Loja loja : lojas) {
-                if (loja.getClass().getSimpleName().equals(tipoLoja)) {
-
+            for (int i = 0; i < lojas.length; i++) {
+                if (lojas[i] instanceof Cosmetico && tipoLoja.equals("Cosmeticos")) {
+                    quantidade++;
+                }else if(lojas[i] instanceof Bijuteria && tipoLoja.equals("Bijuteria")){
+                    quantidade++;
+                }else if(lojas[i] instanceof Alimentacao && tipoLoja.equals("Alimentacao")){
+                    quantidade++;
+                }else if(lojas[i] instanceof Informatica && tipoLoja.equals("Informatica")){
+                    quantidade++;
                 }
             }
             return quantidade;
@@ -83,7 +89,7 @@ public class Shopping {
     public Informatica lojaSeguroMaisCaro() {
         Informatica lojaMaisCara = null;
         double maiorValorSeguro = 0;
-        
+
         for (int i = 0; i < lojas.length; i++) {
             if (lojas[i] != null && lojas[i] instanceof Informatica) {
                 Informatica informatica = (Informatica) lojas[i];
