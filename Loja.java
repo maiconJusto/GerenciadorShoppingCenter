@@ -120,11 +120,11 @@ public class Loja {
             for(int i = 0; i < estoqueProdutos.length; i++){
                 if(estoqueProdutos[i] == null){
                     estoqueProdutos[i] = novoProduto;
-                    return true;
+                    return true; // Produto inserido com sucesso
                 }
             }
         }
-        return false;
+        return false; // Produto não inserido no estoque
     }
 
     public boolean removeProduto(String nomeProduto){
