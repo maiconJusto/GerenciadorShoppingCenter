@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Loja {
 
     private String nome;
@@ -102,8 +104,8 @@ public class Loja {
 
     @Override
     public String toString() {
-        return nome + "/" + quantidadeFuncionarios + "/" + salarioBaseFuncionario + "/" + endereco + "/"
-                + dataFundacao + "/" + estoqueProdutos;
+        return nome + " / " + quantidadeFuncionarios + " / " + salarioBaseFuncionario + " / " + endereco + " / " + dataFundacao
+                + " / " + Arrays.toString(estoqueProdutos);
     }
 
     public void imprimeProdutos(){
@@ -136,4 +138,6 @@ public class Loja {
         }
         return false; // Produto não encontrado no estoque
     }
+
+
 }

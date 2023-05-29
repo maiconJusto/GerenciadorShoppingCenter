@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Vestuario
-comment1.params=nomeLojaVestuario\ quantidadeFuncionariosLojaVestuario\ salarioBaseFuncionarioLojaVestuario\ enderecoLojaVestuario\ dataFundacaoLojaVestuario\ produtosImportados
-comment1.target=Vestuario(java.lang.String,\ int,\ double,\ Endereco,\ Data,\ boolean)
+comment1.params=nomeLojaVestuario\ quantidadeFuncionariosLojaVestuario\ salarioBaseFuncionarioLojaVestuario\ enderecoLojaVestuario\ dataFundacaoLojaVestuario\ produtosImportados\ tamanhoEstoqueLojaVestuario
+comment1.target=Vestuario(java.lang.String,\ int,\ double,\ Endereco,\ Data,\ boolean,\ int)
 comment2.params=
 comment2.target=boolean\ getProdutosImportados()
 comment3.params=produtosImportados
