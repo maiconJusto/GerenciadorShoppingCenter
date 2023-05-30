@@ -2,9 +2,18 @@ public class Vestuario extends Loja {
 
     boolean produtosImportados;
 
-    public Vestuario(String nomeLojaVestuario, int quantidadeFuncionariosLojaVestuario, double salarioBaseFuncionarioLojaVestuario, Endereco enderecoLojaVestuario,
-            Data dataFundacaoLojaVestuario, boolean produtosImportados, int tamanhoEstoqueLojaVestuario) {
-        super(nomeLojaVestuario, quantidadeFuncionariosLojaVestuario, salarioBaseFuncionarioLojaVestuario, enderecoLojaVestuario, dataFundacaoLojaVestuario,
+    public Vestuario(String nomeLojaVestuario,
+            int quantidadeFuncionariosLojaVestuario,
+            double salarioBaseFuncionarioLojaVestuario,
+            Endereco enderecoLojaVestuario,
+            Data dataFundacaoLojaVestuario,
+            boolean produtosImportados,
+            int tamanhoEstoqueLojaVestuario) {
+        super(nomeLojaVestuario,
+                quantidadeFuncionariosLojaVestuario,
+                salarioBaseFuncionarioLojaVestuario,
+                enderecoLojaVestuario,
+                dataFundacaoLojaVestuario,
                 tamanhoEstoqueLojaVestuario);
         this.produtosImportados = produtosImportados;
     }
@@ -19,7 +28,11 @@ public class Vestuario extends Loja {
 
     @Override
     public String toString() {
-        return getNome() + "/" + getQuantidadeFuncionarios() + "/" + getSalarioBaseFuncionario() + "/"
-                + getEndereco() + "/" + getDataFundacao() + "/" + produtosImportados;
+        return getNome() 
+        + "/" + getQuantidadeFuncionarios() 
+        + "/" + getSalarioBaseFuncionario() 
+        + "/" + getEndereco() 
+        + "/" + getDataFundacao() 
+        + "/" + produtosImportados;
     }
 }
