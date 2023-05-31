@@ -94,13 +94,8 @@ public class Principal {
             System.out.println("PRODUTO NÃO VENCIDO");
         }
 
-        /*
-        //Imprime todas as informações da loja criada
-        System.out.println("Informações da loja:");
-        System.out.println("Nome: " + produto.getNome());
-        System.out.println("Quantidade de funcionarios: " + produto.getPreco());
-        System.out.println("Valor total: " + produto.getValorTotal());
-        */
+        System.out.println(loja.toString());
+        
         
     }
 }
