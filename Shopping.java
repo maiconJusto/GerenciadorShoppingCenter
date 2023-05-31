@@ -70,7 +70,7 @@ public class Shopping {
         if (tipoLoja.equals("Cosmetico") || tipoLoja.equals("Bijuteria") || tipoLoja.equals("Alimentacao")
                 || tipoLoja.equals("Informatica")) {
             for (int i = 0; i < lojas.length; i++) {
-                if (lojas[i] instanceof Cosmetico && tipoLoja.equals("Cosmeticos")) {
+                if (lojas[i] instanceof Cosmetico && tipoLoja.equals("Cosmetico")) {
                     quantidade++;
                 }else if(lojas[i] instanceof Bijuteria && tipoLoja.equals("Bijuteria")){
                     quantidade++;
