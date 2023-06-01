@@ -1,25 +1,33 @@
-public class Alimentacao extends Loja{
-    
-    Data dataAlvara;
+public class Alimentacao extends Loja {
 
-    public Alimentacao(String nomeLojaAlimentacao, int quantidadeFuncionariosLojaAlimentacao, 
-            double salarioBaseFuncionarioLojaAlimentacao, Endereco enderecoLojaAlimentacao, 
-            Data dataFundacaoLojaAlimentacao, Data dataAlvara, int tamanhoEstoqueLojaAlimentacao){
-        super(nomeLojaAlimentacao, quantidadeFuncionariosLojaAlimentacao, salarioBaseFuncionarioLojaAlimentacao, enderecoLojaAlimentacao, dataFundacaoLojaAlimentacao, tamanhoEstoqueLojaAlimentacao);
+    private Data dataAlvara;
+
+    public Alimentacao(String nomeLojaAlimentacao,
+            int quantidadeFuncionariosLojaAlimentacao,
+            double salarioBaseFuncionarioLojaAlimentacao,
+            Endereco enderecoLojaAlimentacao,
+            Data dataFundacaoLojaAlimentacao,
+            Data dataAlvara,
+            int tamanhoEstoqueLojaAlimentacao) {
+        super(nomeLojaAlimentacao,
+                quantidadeFuncionariosLojaAlimentacao,
+                salarioBaseFuncionarioLojaAlimentacao,
+                enderecoLojaAlimentacao,
+                dataFundacaoLojaAlimentacao,
+                tamanhoEstoqueLojaAlimentacao);
         this.dataAlvara = dataAlvara;
     }
 
-    public Data getDataAlvara(){
+    public Data getDataAlvara() {
         return dataAlvara;
     }
 
-    public void setDataAlvara(Data dataAlvara){
+    public void setDataAlvara(Data dataAlvara) {
         this.dataAlvara = dataAlvara;
     }
 
     @Override
     public String toString() {
-        return getNome() + "/" + getQuantidadeFuncionarios() + "/" + getSalarioBaseFuncionario() + "/" 
-                + getEndereco() + "/" + getDataFundacao() + "/" + dataAlvara;
+        return super.toString() + "/" + dataAlvara;
     }
 }

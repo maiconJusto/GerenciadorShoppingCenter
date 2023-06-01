@@ -1,9 +1,9 @@
 import java.util.Arrays;
 
 public class Shopping {
-    String nome;
-    Endereco endereco;
-    Loja[] lojas;
+    private String nome;
+    private Endereco endereco;
+    private Loja[] lojas;
 
     public Shopping(String nome, Endereco endereco, int quantMaximaLojas) {
         this.nome = nome;
@@ -70,17 +70,16 @@ public class Shopping {
         if (tipoLoja.equalsIgnoreCase("Alimentacao") || 
                 tipoLoja.equalsIgnoreCase("Bijuteria") || 
                 tipoLoja.equalsIgnoreCase("Cosmetico") || 
-                tipoLoja.equalsIgnoreCase("Informatica") && 
-                tipoLoja != null) {
+                tipoLoja.equalsIgnoreCase("Informatica") && tipoLoja != null) {
             
             for (int i = 0; i < lojas.length; i++) {
-                if (lojas[i] instanceof Cosmetico && tipoLoja.equals("Alimentacao")) {
+                if (lojas[i] instanceof Cosmetico && tipoLoja.equalsIgnoreCase("Alimentacao")) {
                     quantidade++;
-                }else if(lojas[i] instanceof Bijuteria && tipoLoja.equals("Bijuteria")){
+                }else if(lojas[i] instanceof Bijuteria && tipoLoja.equalsIgnoreCase("Bijuteria")){
                     quantidade++;
-                }else if(lojas[i] instanceof Alimentacao && tipoLoja.equals("Cosmetico")){
+                }else if(lojas[i] instanceof Alimentacao && tipoLoja.equalsIgnoreCase("Cosmetico")){
                     quantidade++;
-                }else if(lojas[i] instanceof Informatica && tipoLoja.equals("Informatica")){
+                }else if(lojas[i] instanceof Informatica && tipoLoja.equalsIgnoreCase("Informatica")){
                     quantidade++;
                 }
             }

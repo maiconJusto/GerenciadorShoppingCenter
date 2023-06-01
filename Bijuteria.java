@@ -1,12 +1,20 @@
 public class Bijuteria extends Loja {
 
-    double metaVendas;
+    private double metaVendas;
 
-    public Bijuteria(String nomeLojaBijuteria, int quantidadeFuncionariosLojaBijuteria,
-            double salarioBaseFuncionarioLojaBijuteria, Endereco enderecoLojaBijuteria, Data dataFundacaoLojaBijuteria,
-            int tamanhoEstoqueLojaBijuteria, double metaVendas) {
-        super(nomeLojaBijuteria, quantidadeFuncionariosLojaBijuteria, salarioBaseFuncionarioLojaBijuteria,
-                enderecoLojaBijuteria, dataFundacaoLojaBijuteria, tamanhoEstoqueLojaBijuteria);
+    public Bijuteria(String nomeLojaBijuteria,
+            int quantidadeFuncionariosLojaBijuteria,
+            double salarioBaseFuncionarioLojaBijuteria,
+            Endereco enderecoLojaBijuteria,
+            Data dataFundacaoLojaBijuteria,
+            int tamanhoEstoqueLojaBijuteria,
+            double metaVendas) {
+        super(nomeLojaBijuteria,
+                quantidadeFuncionariosLojaBijuteria,
+                salarioBaseFuncionarioLojaBijuteria,
+                enderecoLojaBijuteria,
+                dataFundacaoLojaBijuteria,
+                tamanhoEstoqueLojaBijuteria);
         this.metaVendas = metaVendas;
     }
 
@@ -20,7 +28,7 @@ public class Bijuteria extends Loja {
 
     @Override
     public String toString() {
-        return getNome() + "/" + getQuantidadeFuncionarios() + "/" + getSalarioBaseFuncionario() + "/"
-                + getEndereco() + "/" + getDataFundacao() + "/" + metaVendas;
+        return super.toString() + "/" + metaVendas;
     }
+
 }
