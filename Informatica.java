@@ -1,25 +1,33 @@
-public class Informatica extends Loja{
-     
-    double seguroEletronicos;
+public class Informatica extends Loja {
 
-    public Informatica(String nomeLojaInformatica, int quantidadeFuncionariosLojaInformatica, 
-            double salarioBaseFuncionarioLojaInformatica, Endereco enderecoLojaInformatica, 
-            Data dataFundacaoLojaInformatica, int tamanhoEstoqueLojaInformatica, double seguroEletronicos){
-        super(nomeLojaInformatica, quantidadeFuncionariosLojaInformatica, salarioBaseFuncionarioLojaInformatica, enderecoLojaInformatica, dataFundacaoLojaInformatica, tamanhoEstoqueLojaInformatica);
+    private double seguroEletronicos;
+
+    public Informatica(String nomeLojaInformatica,
+            int quantidadeFuncionariosLojaInformatica,
+            double salarioBaseFuncionarioLojaInformatica,
+            Endereco enderecoLojaInformatica,
+            Data dataFundacaoLojaInformatica,
+            int tamanhoEstoqueLojaInformatica,
+            double seguroEletronicos) {
+        super(nomeLojaInformatica,
+                quantidadeFuncionariosLojaInformatica,
+                salarioBaseFuncionarioLojaInformatica,
+                enderecoLojaInformatica,
+                dataFundacaoLojaInformatica,
+                tamanhoEstoqueLojaInformatica);
         this.seguroEletronicos = seguroEletronicos;
     }
 
-    public double getSeguroEletronicos(){
+    public double getSeguroEletronicos() {
         return seguroEletronicos;
     }
 
-    public void setSeguroEletronicos(double seguroEletronicos){
+    public void setSeguroEletronicos(double seguroEletronicos) {
         this.seguroEletronicos = seguroEletronicos;
     }
 
     @Override
     public String toString() {
-        return getNome() + "/" + getQuantidadeFuncionarios() + "/" + getSalarioBaseFuncionario() + "/" 
-                + getEndereco() + "/" + getDataFundacao() + "/" + seguroEletronicos;
+        return super.toString() + "/" + seguroEletronicos;
     }
 }
