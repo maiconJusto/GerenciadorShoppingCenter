@@ -1,10 +1,10 @@
 public class Data {
-    
+
     private int dia;
     private int mes;
     private int ano;
 
-    //construtor com método de decisão 
+    // construtor com método de decisão
     public Data(int dia, int mes, int ano) {
         if (validaData(dia, mes, ano)) {
             this.dia = dia;
@@ -18,11 +18,11 @@ public class Data {
         }
     }
 
-    
-    //métodos Get e Set)
+    // métodos Get e Set)
     public int getDia() {
         return dia;
     }
+
     public void setDia(int dia) {
         if (validaData(dia, this.mes, this.ano)) {
             this.dia = dia;
@@ -30,11 +30,12 @@ public class Data {
             System.out.println("Dia inválido! Alterando para data padrão 01");
             this.dia = 1;
         }
-    }   
+    }
 
     public int getMes() {
         return mes;
     }
+
     public void setMes(int mes) {
         if (validaData(this.dia, mes, this.ano)) {
             this.mes = mes;
@@ -47,6 +48,7 @@ public class Data {
     public int getAno() {
         return ano;
     }
+
     public void setAno(int ano) {
         if (validaData(this.dia, this.mes, ano)) {
             this.ano = ano;
@@ -56,31 +58,31 @@ public class Data {
         }
     }
 
-    //método toString
+    // método toString
     @Override
     public String toString() {
-        return dia + " / "+ mes +" / "+ ano;
+        return dia + " / " + mes + " / " + ano;
     }
 
-    //método verificação ano bissexto
+    // método verificação ano bissexto
     public boolean verificaAnoBissexto() {
         if (ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0))
             return true;
         return false;
     }
 
-    //validando data
+    // validando data
     private boolean validaData(int dia, int mes, int ano) {
         if (ano < 1) {
             return false;
         }
 
-        //validando mês
+        // validando mês
         if (mes < 1 || mes > 12) {
             return false;
         }
 
-        //validando dias de cada mês
+        // validando dias de cada mês
         int ultimoDiaDoMes = 31;
 
         if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
@@ -100,6 +102,4 @@ public class Data {
         return true;
     }
 
-
-   
 }
