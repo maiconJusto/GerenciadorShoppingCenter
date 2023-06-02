@@ -1,6 +1,7 @@
 public class Alimentacao extends Loja {
 
     private Data dataAlvara;
+    private String tipoLoja;
 
     public Alimentacao(String nomeLojaAlimentacao,
             int quantidadeFuncionariosLojaAlimentacao,
@@ -9,13 +10,16 @@ public class Alimentacao extends Loja {
             Data dataFundacaoLojaAlimentacao,
             Data dataAlvara,
             int tamanhoEstoqueLojaAlimentacao) {
+
         super(nomeLojaAlimentacao,
                 quantidadeFuncionariosLojaAlimentacao,
                 salarioBaseFuncionarioLojaAlimentacao,
                 enderecoLojaAlimentacao,
                 dataFundacaoLojaAlimentacao,
                 tamanhoEstoqueLojaAlimentacao);
+
         this.dataAlvara = dataAlvara;
+        this.tipoLoja = "Alimentacao";
     }
 
     public Data getDataAlvara() {
@@ -24,6 +28,14 @@ public class Alimentacao extends Loja {
 
     public void setDataAlvara(Data dataAlvara) {
         this.dataAlvara = dataAlvara;
+    }
+
+    public String getTipoLoja(){
+        return tipoLoja;
+    }
+
+    public void setTipoLoja(String tipoLoja) {
+        this.tipoLoja = tipoLoja;
     }
 
     @Override

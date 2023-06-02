@@ -1,6 +1,7 @@
 public class Informatica extends Loja {
 
     private double seguroEletronicos;
+    private String tipoLoja;
 
     public Informatica(String nomeLojaInformatica,
             int quantidadeFuncionariosLojaInformatica,
@@ -9,13 +10,16 @@ public class Informatica extends Loja {
             Data dataFundacaoLojaInformatica,
             int tamanhoEstoqueLojaInformatica,
             double seguroEletronicos) {
+
         super(nomeLojaInformatica,
                 quantidadeFuncionariosLojaInformatica,
                 salarioBaseFuncionarioLojaInformatica,
                 enderecoLojaInformatica,
                 dataFundacaoLojaInformatica,
                 tamanhoEstoqueLojaInformatica);
+
         this.seguroEletronicos = seguroEletronicos;
+        this.tipoLoja = "Informática";
     }
 
     public double getSeguroEletronicos() {
@@ -24,6 +28,14 @@ public class Informatica extends Loja {
 
     public void setSeguroEletronicos(double seguroEletronicos) {
         this.seguroEletronicos = seguroEletronicos;
+    }
+
+    public String getTipoLoja() {
+        return tipoLoja;
+    }
+
+    public void setTipoLoja(String tipoLoja) {
+        this.tipoLoja = tipoLoja;
     }
 
     @Override

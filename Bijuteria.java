@@ -1,6 +1,7 @@
 public class Bijuteria extends Loja {
 
     private double metaVendas;
+    private String tipoLoja;
 
     public Bijuteria(String nomeLojaBijuteria,
             int quantidadeFuncionariosLojaBijuteria,
@@ -9,13 +10,16 @@ public class Bijuteria extends Loja {
             Data dataFundacaoLojaBijuteria,
             int tamanhoEstoqueLojaBijuteria,
             double metaVendas) {
+
         super(nomeLojaBijuteria,
                 quantidadeFuncionariosLojaBijuteria,
                 salarioBaseFuncionarioLojaBijuteria,
                 enderecoLojaBijuteria,
                 dataFundacaoLojaBijuteria,
                 tamanhoEstoqueLojaBijuteria);
+
         this.metaVendas = metaVendas;
+        this.tipoLoja = "Bijuteria";
     }
 
     public double getMetaVendas() {
@@ -24,6 +28,14 @@ public class Bijuteria extends Loja {
 
     public void setMetaVendas(double metaVendas) {
         this.metaVendas = metaVendas;
+    }
+
+    public String getTipoLoja() {
+        return tipoLoja;
+    }
+
+    public void setTipoLoja(String tipoLoja) {
+        this.tipoLoja = tipoLoja;
     }
 
     @Override

@@ -71,7 +71,7 @@ public class Shopping {
         if (tipoLoja.equalsIgnoreCase("Alimentacao") || 
                 tipoLoja.equalsIgnoreCase("Bijuteria") || 
                 tipoLoja.equalsIgnoreCase("Cosmetico") || 
-                tipoLoja.equalsIgnoreCase("Informatica") && tipoLoja != null) {
+                tipoLoja.equalsIgnoreCase("Informática") && tipoLoja != null) {
             
             for (int i = 0; i < lojas.length; i++) {
                 if (lojas[i] instanceof Cosmetico && tipoLoja.equalsIgnoreCase("Alimentacao")) {
@@ -80,7 +80,7 @@ public class Shopping {
                     quantidade++;
                 }else if(lojas[i] instanceof Alimentacao && tipoLoja.equalsIgnoreCase("Cosmetico")){
                     quantidade++;
-                }else if(lojas[i] instanceof Informatica && tipoLoja.equalsIgnoreCase("Informatica")){
+                }else if(lojas[i] instanceof Informatica && tipoLoja.equalsIgnoreCase("Informática")){
                     quantidade++;
                 }
             }
