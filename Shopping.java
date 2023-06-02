@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class Shopping {
     private String nome;
     private Endereco endereco;
+
     private Loja[] lojas;
 
     public Shopping(String nome, Endereco endereco, int quantMaximaLojas) {

@@ -8,6 +8,7 @@ public class Loja {
     private Endereco endereco;
     private Data dataFundacao;
     private Produto[] estoqueProdutos;
+    private String tipoLoja;
 
     // Primeiro construtor
     public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao,  int tamanhoEstoque) {
@@ -70,6 +71,14 @@ public class Loja {
 
     public void setDataFundacao(Data dataFundacao) {
         this.dataFundacao = dataFundacao;
+    }
+
+    public String getTipoLoja(){
+        return tipoLoja;
+    }
+
+    public void setTipoLoja(String tipoLoja){
+        this.tipoLoja = tipoLoja;
     }
 
     //Método estoque da loja
