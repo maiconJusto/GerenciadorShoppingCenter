@@ -40,6 +40,6 @@ public class Alimentacao extends Loja {
 
     @Override
     public String toString() {
-        return super.toString() + "/" + dataAlvara;
+        return super.toString() + " / " + dataAlvara;
     }
 }

@@ -40,6 +40,6 @@ public class Cosmetico extends Loja {
 
     @Override
     public String toString() {
-        return super.toString() + "/" + taxaComercializacao;
+        return super.toString() + " / " + taxaComercializacao;
     }
 }

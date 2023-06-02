@@ -40,6 +40,6 @@ public class Informatica extends Loja {
 
     @Override
     public String toString() {
-        return super.toString() + "/" + seguroEletronicos;
+        return super.toString() + " / " + seguroEletronicos;
     }
 }

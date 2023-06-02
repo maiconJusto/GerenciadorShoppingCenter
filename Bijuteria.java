@@ -40,7 +40,7 @@ public class Bijuteria extends Loja {
 
     @Override
     public String toString() {
-        return super.toString() + "/" + metaVendas;
+        return super.toString() + " / " + metaVendas;
     }
 
 }

@@ -59,7 +59,7 @@ public class Data {
     //método toString
     @Override
     public String toString() {
-        return dia + " - "+ mes +" - "+ ano;
+        return dia + " / "+ mes +" / "+ ano;
     }
 
     //método verificação ano bissexto
