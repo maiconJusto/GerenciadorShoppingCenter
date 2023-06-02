@@ -23,7 +23,7 @@ public class Principal {
                     int quantFuncionarioLoja = Teclado.leInt("Digite quant funcionario: :");
                     double SalFuncionarioLoja = Teclado.leDouble("Digite o Salario dos funcionarios da loja: ");
 
-                    //Fundação da loja
+                    //Data Fundação da loja
                     int diaFundacaoLoja = Teclado.leInt("Digite o dia de fundação da loja: ");
                     int mesFundacaoLoja = Teclado.leInt("Digite o mês de fundação da loja: ");
                     int anoFundacaoLoja = Teclado.leInt("Digite o ano de fundação da loja: ");
@@ -37,7 +37,7 @@ public class Principal {
                     String estadoDaLoja = Teclado.leString("Digite o estado da loja: ");
                     String paisLoja = Teclado.leString("Digite o país da loja: ");
                     
-                    //Tamnho do estoque da loja
+                    //Tamanho do estoque da loja
                     int tamanhoEstoqueLoja = Teclado.leInt("Digite o tamanho do estoque: ");
                     
                     //Instancias
