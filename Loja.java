@@ -72,14 +72,6 @@ public class Loja {
         this.dataFundacao = dataFundacao;
     }
 
-    public String getTipoLoja(){
-        return tipoLoja;
-    }
-
-    public void setTipoLoja(String tipoLoja){
-        this.tipoLoja = tipoLoja;
-    }
-
     //Método estoque da loja
     public Produto[] getEstoqueProdutos() {
         return estoqueProdutos;
